@@ -19,5 +19,6 @@ urlpatterns = patterns('',
     url(r'^$', 'products.views.home'),
     url(r'^products/$', 'products.views.products'),
     url(r'^products/(?P<slug>[-\w]+)/$', 'products.views.product_single'),
+    url(r'^contact/$', 'contact.views.contact'),
     
 )
