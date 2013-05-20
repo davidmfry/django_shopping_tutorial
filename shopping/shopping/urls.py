@@ -20,6 +20,8 @@ urlpatterns = patterns('',
     ('^pages/', include('django.contrib.flatpages.urls')),
     url(r'^products/$', 'products.views.products'),
     url(r'^products/(?P<slug>[-\w]+)/$', 'products.views.product_single'),
+    url(r'^products/(?P<slug>[-\w]+)/add$', 'cart.views.add'),
     url(r'^contact/$', 'contact.views.contact'),
+    url(r'^cart/$', 'cart.views.view')
     
 )

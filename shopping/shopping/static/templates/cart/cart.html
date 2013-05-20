@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    <table class='table'>
+        <thead><th>Item</th><th>Description</th></thead>
+    {% for item in cart_exists.products.all %}
+        <tr><td>{{ item }}</td><td>{{ item.description }}</td></tr>
+    {% endfor %}
+    </table>    
+{% endblock %}
